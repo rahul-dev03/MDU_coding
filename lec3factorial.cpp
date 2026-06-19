@@ -10,7 +10,7 @@ int main(){
     while(n>=1){
         product*=n;
         n-=1;
-    }cout << "factorial :"<< product;
+    }cout << "factorial = "<< product;
 
     return 0;
 }
