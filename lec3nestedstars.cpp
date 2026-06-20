@@ -2,13 +2,14 @@
 using namespace std;
 
 int main(){
-    int n;
-    cout << "no. of rows :";
-    cin >> n;
 
-    for (int i=1 ; i<=n ; i++) {
-        int m=5;
-    for (int j=1 ;j<=m ; j++){
+    int m;
+    cout << "start triangle with no. :";
+    cin >> m;
+
+    for (int i=1 ; i<=m ; i++ ) {
+
+    for (int j=1 ;j<=(m+1-i) ; j++){
         cout << "*";
     }cout <<endl;
 
