@@ -8,14 +8,17 @@ int main(){
     cin >> n;
 
     for (int i=0 ; i<n ; i++){
-        for (int k=0 ; k<i ; k++){
+
+        for (int j=0 ; j<n-i-1 ; j++){
             cout << " ";
         }
-    for (int j=0 ; j<n-i; j++ ){
+    for (int j=0 ; j<i+1; j++ ){
         
-        cout << (i+1);
-        // if i add space after cout then downward triangle forms
-    }cout << endl;
+        cout << (j+1);
+       
+    } for (int j=i ; j>0 ;j--){
+            cout << j;
+        }cout << endl;
 }
 
     return 0;
