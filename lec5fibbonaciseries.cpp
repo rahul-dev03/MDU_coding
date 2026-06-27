@@ -1,15 +1,25 @@
 #include <iostream>
 using namespace std;
 
-int series(int n){
-
-    
-    
-}
-
 int main(){
 
+    int n; 
+    cout << "nth fibbonaci : ";
+    cin >> n;
 
-    series(7);
+    int a=0 ,b=1;
+
+    for (int i=0 ; i<=n ; i++){
+
+        cout << a << " ";
+
+        int next_term =a+b;
+        a=b;
+        b=next_term;
+
+    }
+
+
+
     return 0;
 }
