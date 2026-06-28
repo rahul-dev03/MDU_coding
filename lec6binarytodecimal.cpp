@@ -22,7 +22,6 @@ int main(){
     cout << "binary code : ";
     cin >> n;
 
-    cout << "No. : " <<  binarytodec(n);
-
+    cout << "No. : " <<  binarytodec(n)<< endl;
     return 0;
 }

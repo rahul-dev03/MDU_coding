@@ -20,9 +20,9 @@ int main (){
     cin >> n;
 
     cout << "No ." << "   "<< "binary code " <<endl;
-    for(int i=0 ; i<=n ; i++){
+     for(int i=0 ; i<=n ; i++){
         cout << i<< "      ";
-        cout << dectobinary(i)<< endl;
+        cout << dectobinary(n)<< endl;
     }
 
     return 0;
