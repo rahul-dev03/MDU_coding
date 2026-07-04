@@ -4,7 +4,7 @@ using namespace std;
 void changearr(int arr[] , int size){
     cout << "changed function"<< endl;
     for(int i=0 ; i<size ; i++){
-        arr[i]=2*arr[i];
+        arr[i]*=2;
     }
 }
 
