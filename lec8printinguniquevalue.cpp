@@ -1,31 +1,40 @@
 #include <iostream>
 using namespace std;
 
-int uniqueval(int arr[] ; int sz){
+int uniqueval(int arr[] , int sz){
 
-    int unique;
-    for (int i=0 ; i<sz ; i++){
-       int  num=arr[i];
-       for(int j=1 ; j<sz ; j++){
-        if(arr[i]==num);
-        break;
-       }else unique=num;
-    }return unique;
+    for(int i=0 ; i<sz ; i++){
+        int num=arr[i];
+        bool isunique=true;
+        for(int j=0 ; j<sz  ; j++){
+            if(arr[j]==num && j!=i){
+                isunique=false;
+                break;
+            }
+        }
+        if(isunique==true){
+            cout << num << " ";
+        }
+
+    }
 }
 
 int main(){
 
-    int sz;
+    int sz=6;
     cout << "size = ";
     cin >> sz;
 
     int arr[sz];
     cout << "array = ";
 
+
     for (int i=0 ; i<sz ; i++){
-        cin >> arr[i];
+         cin >> arr[i];
     }
 
-    cout << "unique no. : " << uniqueval(arr , sz) << " ";
+    cout << "unique value = ";
+    uniqueval(arr , sz);
+    cout << endl;
     return 0;
 }
