@@ -22,7 +22,7 @@ int main (){
     cout << "No ." << "   "<< "binary code " <<endl;
      for(int i=0 ; i<=n ; i++){
         cout << i<< "      ";
-        cout << dectobinary(n)<< endl;
+        cout << dectobinary(i)<< endl;
     }
 
     return 0;
