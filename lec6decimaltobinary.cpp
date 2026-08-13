@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int dectobinary(int i){
+int dectobinary(int n){
     int ans=0 , power=1;
-    while(i>0){
-        int rem=i%2;
-        i/=2;
+    while(n>0){
+        int rem=n%2;
+        n/=2;
 
         ans+=(rem*power);
         power*=10;

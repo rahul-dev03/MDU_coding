@@ -8,10 +8,12 @@ int main (){
     // this is vector with no sizze or no stored value
     // cout << vec[0]; this file will  not be accessible >> segmentation error
 
-    //  vector <int> vec={1,2,3}; automatic size becomes 3 becoz vector works diff. from array 
-    //  becoz array is fixed and vector can expand;
-    //  cout << vec[0];
-    //  this prints value in vector
+     //vector <int> vec={1,2,3}; //automatic size becomes 3 becoz vector works diff. from array 
+     //becoz array is fixed and vector can expand;
+     //cout << vec[0];
+     //cout << vec.size()<<endl; // 3
+     //cout << vec.capacity(); // 3
+     //  this prints value in vector
      
     // vector<int> vec(3,0); // 3 is size and 0 is value assigned to all index; _0_0_0.
     // cout << vec[0] << " ";

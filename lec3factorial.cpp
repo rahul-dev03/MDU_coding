@@ -7,9 +7,9 @@ int main(){
     cin >> n;
     int product=1;
 
-    while(n>=1){
+    while(n>0){
         product*=n;
-        n-=1;
+        n--;
     }cout << "factorial = "<< product;
 
     return 0;

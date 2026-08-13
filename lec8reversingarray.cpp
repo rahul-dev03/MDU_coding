@@ -13,13 +13,18 @@ void reversearr(int arr[] , int sz){
 
 int main(){
 
-    int arr[]={1,2,3,4,5};
-    int sz=5;
+    int sz; cout << "size = "; cin >> sz;
+    int arr[sz];
+    cout << "array = "; 
+    for(int i=0 ; i<sz ; i++){
+        cin >> arr[i];
+    }
 
     reversearr( arr , sz);
 
+    cout << "reversed arr = ";
     for(int i=0 ; i<sz ; i++){
-        cout << arr[i] << ",";
+        cout << arr[i] << " ";
     }
 
     cout << endl;

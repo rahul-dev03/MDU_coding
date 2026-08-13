@@ -16,12 +16,28 @@ int binarytodec(int n){
     }return num;
 }
 
+int numcheck(int n){
+    int y=n;
+    while(y>0){
+        int l=y%10;
+        if(l==1 || l==0){
+            y/=10;
+        }else return -1;
+    }return n;
+}
+
 int main(){
 
     int n;
     cout << "binary code : ";
     cin >> n;
 
-    cout << "No. : " <<  binarytodec(n)<< endl;
+    int x=numcheck(n);
+    if(x==-1){
+        cout << "invalid";
+        return 0;
+    }
+
+    cout << "No. : " <<  binarytodec(x)<< endl;
     return 0;
 }

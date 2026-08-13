@@ -1,13 +1,6 @@
 #include <iostream>
+#include <vector>
 using namespace std;
-
-//  int multiplier(int n){
-//     int power=1;
-//      while(n>9){
-//         n/=10;
-//         power*=10;
-//     }return power;
-// } good but not omptimised
 
 int reverse(int n){
 
@@ -17,7 +10,21 @@ int reverse(int n){
         int rem=n%10;
         n/=10;
         ans=(ans*power)+rem;
-    }return ans;
+    }
+    return ans;
+}
+
+void rev1(int n){
+    vector<int> vec;
+
+    while(n>0){
+        int rem=n%10;
+        n/=10;
+        vec.push_back(rem);
+    }
+    for(int i : vec){
+        cout << i;
+    }cout <<endl;
 }
 
 int main(){
@@ -26,7 +33,7 @@ int main(){
     cout << "enter : ";
     cin >> n;
 
-    cout << "reversed no. : " << reverse( n);
+    cout << "reversed no. : " << reverse(n);
    
     return 0;
 }

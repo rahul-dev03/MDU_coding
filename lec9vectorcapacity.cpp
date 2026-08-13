@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-    vector<int> vec; 
+    vector<int> vec;
 
     vec.push_back(1); // 1 one size array
     vec.push_back(2); // 2 times gives 1-2

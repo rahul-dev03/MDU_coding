@@ -25,7 +25,7 @@ int main(){
 
     }cout << "sum :" << sum << endl;
 
-    bool y=isprime(n);
+    int y=isprime(n); // is prime comes from bool which convert true false to 1,0
     if (y==1){
         cout << "prime";
     }else cout <<"non prime";
@@ -40,7 +40,7 @@ int main(){
         
         // bool isprime=true;
 
-        // for (int j=2 ; j<i ; j++){
+        // for (int j=2 ; j*j<i ; j++){
             // if (i%j==0){
                 // isprime =false;
                 // break;

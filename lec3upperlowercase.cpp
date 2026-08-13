@@ -7,7 +7,7 @@ int main() {
     cin >> ch;
     if (ch>='a' && ch<='z'){
         cout << "lowercase";
-    }else {
+    }else if(ch>='A' && ch<='Z'){
         cout << "UPPERCASE";
     }
 

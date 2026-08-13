@@ -4,10 +4,10 @@ using namespace std;
 int uniqueval(int arr[] , int sz){
 
     for(int i=0 ; i<sz ; i++){
-        int num=arr[i];
+
         bool isunique=true;
         for(int j=0 ; j<sz  ; j++){
-            if(arr[j]==num && j!=i){
+            if(arr[j]==arr[i] && j!=i){
                 isunique=false;
                 break;
             }
@@ -19,9 +19,9 @@ int uniqueval(int arr[] , int sz){
     }
 }
 
-int main(){
+int main(){lec8intersectionofarray
 
-    int sz=6;
+    int sz;
     cout << "size = ";
     cin >> sz;
 

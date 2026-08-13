@@ -6,10 +6,10 @@ int main() {
     cout << "enter ur no. :";
     cin >> n;
     bool isprime=true;
-    
-    if (n==1){
+   
+    if(n==0){
         isprime=false;
-    }else
+    }
 
     for (int i=2 ; i*i<=n ; i++){
         if (n%i==0){

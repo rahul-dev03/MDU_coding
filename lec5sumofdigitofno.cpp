@@ -12,6 +12,7 @@ int digitsum(int num){
 
 int main(){
 
-   cout << digitsum(203);
+    int n; cout << "No. : "; cin >> n;
+    cout << digitsum(n);
     return 0;
 }

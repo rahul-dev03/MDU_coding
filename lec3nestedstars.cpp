@@ -7,9 +7,9 @@ int main(){
     cout << "start triangle with no. :";
     cin >> m;
 
-    for (int i=1 ; i<=m ; i++ ) {
+    for (int i=0 ; i<m ; i++ ) {
 
-    for (int j=1 ;j<=(m+1-i) ; j++){
+    for (int j=0 ;j<(m-i) ; j++){
         cout << "*";
     }cout <<endl;
 

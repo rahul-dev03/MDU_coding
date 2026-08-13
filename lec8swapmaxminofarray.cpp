@@ -7,7 +7,7 @@ int swapminmax(int arr[] , int sz){
     int smallest = INT_MAX;
     int sindex=0;
     int largest = INT_MIN;
-    int lindex=0; 
+    int lindex=0;     
     for (int i=0 ; i<sz ; i++){
         if(arr[i]<smallest){
             smallest = arr[i];

@@ -17,12 +17,12 @@ vector<int> pairsum(vector<int> nums , int target){ //0(n)
         ans.push_back(j);
         return ans;
        }
-    }retun ans;
+    }return ans;
 }
 
 int main(){
 
-    vector<int> nums={2,7,11,7};
+    vector<int> nums={2,7,9,7};
     int target=9;
 
     vector<int> ans=pairsum(nums , target);

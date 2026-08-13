@@ -4,8 +4,9 @@ using namespace std;
 
 int majorityElement(vector<int> nums) {
 
-    int feq=0, n=nums.size();
+    int n=nums.size();
     for(int val : nums){
+        int freq =0;
         for(int el : nums){
             if(el==val){
                 feq++;
@@ -20,7 +21,7 @@ int majorityElement(vector<int> nums) {
 
 int main(){
 
-    vector<int> nums={1,1,2,2,1};
+    vector<int> nums={2,2,1,1,1,2,2};
 
     cout << majorityElement(nums );
 

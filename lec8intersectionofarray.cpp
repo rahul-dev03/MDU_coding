@@ -4,13 +4,12 @@ using namespace std;
 int intersection(int sz1 , int arr1[], int sz2 , int arr2[]){
     for(int i=0 ; i<sz1 ; i++){
        bool intsec=false;
-       int  num=arr1[i];
        for(int j=0 ; j<sz2 ; j++){
-        if(num==arr2[j]){
+        if(arr1[i]==arr2[j]){
             intsec=true;
         }
        }if (intsec==true){
-        cout << num << " ";
+        cout << arr1[i] << " ";
        }
     }
 }

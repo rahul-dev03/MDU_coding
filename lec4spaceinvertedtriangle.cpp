@@ -11,12 +11,12 @@ int main(){
         for (int k=0 ; k<i ; k++){
             cout << " ";
         }
-    for (int j=0 ; j<n-i; j++ ){
+        for (int j=0 ; j<n-i; j++ ){
         
-        cout << (i+1);
+        cout << (i+1) ;
         // if i add space after cout then downward triangle forms
-    }cout << endl;
-}
+        }cout << endl;
+    }
 
     return 0;
 }

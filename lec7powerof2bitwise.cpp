@@ -9,7 +9,7 @@ int main(){
     
     int i=1;
     while(i<n){
-        i=i<<1;
+        i=i<<1; // 1 ,10 ,100 ,100 --- 1 ,2 ,4 ,8
     }
     if (i==n) cout << "power of 2";
     else cout << "not power of 2";

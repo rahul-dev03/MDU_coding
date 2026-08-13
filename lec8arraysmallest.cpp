@@ -1,5 +1,5 @@
 #include <iostream>
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> // for infinty library
 using namespace std;
 
 int main(){
@@ -22,8 +22,8 @@ int main(){
         }
     }
 
-    cout << "smallest = " << sindex << endl;
-    cout << "largest = " << lindex <<endl;
+    cout << "smallest = " << smallest << " at i = "<< sindex << endl;
+    cout << "largest = " << largest << " at i = " << lindex <<endl;
 
     return 0;
 }
